@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Obadara Basit Odunayo | Frontend Developer</title>
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body class="bg-slate-950 text-slate-100 font-sans selection:bg-blue-500 selection:text-white min-h-screen">
+
+  <!-- Navigation Header -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-slate-950/80 backdrop-blur-md border-b border-slate-800/80">
+    <div class="max-w-5xl mx-auto px-5 sm:px-6 h-16 flex items-center justify-between">
+      <a href="#home" class="text-xl font-bold tracking-tight text-blue-400 hover:text-blue-300 transition">
+        Odddunayo
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="hidden md:flex gap-7 text-sm font-medium text-slate-400">
+        <a href="#home" class="hover:text-blue-400 transition">Home</a>
+        <a href="#about" class="hover:text-blue-400 transition">About Me</a>
+        <a href="#skills" class="hover:text-blue-400 transition">Skills</a>
+        <a href="#projects" class="hover:text-blue-400 transition">Projects</a>
+        <a href="#certifications" class="hover:text-blue-400 transition">Certifications</a>
+        <a href="#education" class="hover:text-blue-400 transition">Education</a>
+        <a href="#contact" class="hover:text-blue-400 transition">Contact</a>
+      </nav>
+
+      <!-- Mobile Menu Toggle Button -->
+      <button id="menu-toggle" class="md:hidden p-2 text-slate-400 hover:text-white focus:outline-none"
+        aria-label="Toggle Navigation Menu">
+        <i data-lucide="menu" id="menu-icon" class="w-6 h-6"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Navigation Menu -->
+    <nav id="mobile-menu"
+      class="hidden md:hidden border-b border-slate-800 bg-slate-950 px-6 py-6 flex flex-col gap-4 text-base font-medium text-slate-300 shadow-2xl">
+      <a href="#home" class="mobile-nav-link hover:text-blue-400 transition">Home</a>
+      <a href="#about" class="mobile-nav-link hover:text-blue-400 transition">About Me</a>
+      <a href="#skills" class="mobile-nav-link hover:text-blue-400 transition">Skills</a>
+      <a href="#projects" class="mobile-nav-link hover:text-blue-400 transition">Projects</a>
+      <a href="#certifications" class="mobile-nav-link hover:text-blue-400 transition">Certifications</a>
+      <a href="#education" class="mobile-nav-link hover:text-blue-400 transition">Education</a>
+      <a href="#contact" class="mobile-nav-link hover:text-blue-400 transition">Contact</a>
+    </nav>
+  </header>
+
+  <main class="max-w-5xl mx-auto px-5 sm:px-6 pt-24 sm:pt-28 pb-20 space-y-24 sm:space-y-32">
+
+    <!-- Hero Section -->
+    <section id="home"
+      class="relative min-h-[85vh] flex flex-col items-center justify-center pt-8 pb-12 overflow-hidden text-center">
+      <div
+        class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-72 sm:w-96 h-72 sm:h-96 bg-gradient-to-tr from-blue-600/30 via-indigo-500/20 to-purple-600/20 rounded-full blur-3xl -z-10 pointer-events-none">
+      </div>
+
+      <!-- Hero Image with CSS Mask Fade (No background removal needed) -->
+      <div class="relative mb-8 max-w-sm sm:max-w-md mx-auto flex items-center justify-center">
+
+        <!-- Ambient Soft Blue Glow Behind Image -->
+        <div class="absolute inset-0 bg-blue-600/30 rounded-full blur-3xl scale-90 -z-10"></div>
+
+        <!-- Image with Radial Gradient Fade Applied -->
+        <img src="avi.jpg" alt="Obadara Basit Odunayo"
+          class="w-full h-auto object-cover relative z-10 transition-transform duration-500 hover:scale-[1.02]" style="
+      -webkit-mask-image: radial-gradient(circle at center, black 40%, transparent 75%);
+      mask-image: radial-gradient(circle at center, black 40%, transparent 75%);
+    " />
+      </div>
+      <div class="max-w-2xl space-y-4 z-10">
+        <p class="text-blue-400 text-xs sm:text-sm font-semibold tracking-widest uppercase">
+          Hello, I'm
+        </p>
+
+        <h1 class="text-3xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-white leading-tight">
+          Obadara Basit Odunayo
+        </h1>
+
+        <p class="text-lg sm:text-2xl text-blue-400 font-medium">
+          Frontend Developer
+        </p>
+
+        <p class="text-sm sm:text-base text-slate-400 leading-relaxed max-w-xl mx-auto">
+          A philosophy graduate turned coder, exploring the intersection of logic, existentialism, and clean interfaces.
+          I build web applications that combine clear code with intuitive user experiences.
+        </p>
+
+        <div class="flex items-center justify-center gap-4 pt-4">
+          <a href="https://wa.me/08173701023" target="_blank" rel="noreferrer"
+            class="px-6 py-3 bg-blue-600 hover:bg-blue-500 text-white font-medium rounded-lg transition shadow-lg shadow-blue-500/20 flex items-center gap-2 text-sm">
+            Hire Me <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+          </a>
+          <a href="#contact"
+            class="px-6 py-3 border border-slate-700 hover:border-slate-500 text-slate-300 hover:text-white font-medium rounded-lg transition text-sm">
+            Let's Talk
+          </a>
+        </div>
+
+        <div class="flex items-center justify-center gap-3 pt-6 text-slate-400">
+          <a href="https://twitter.com/@Oddunayo" target="_blank" rel="noreferrer"
+            class="p-2.5 hover:text-blue-400 hover:bg-slate-900 rounded-lg transition" aria-label="Twitter"><i
+              data-lucide="twitter" class="w-5 h-5"></i></a>
+          <a href="https://linkedin.com/in/basit-obadara-32802a28a/" target="_blank" rel="noreferrer"
+            class="p-2.5 hover:text-blue-400 hover:bg-slate-900 rounded-lg transition" aria-label="LinkedIn"><i
+              data-lucide="linkedin" class="w-5 h-5"></i></a>
+          <a href="https://www.instagram.com/obadarabasit" target="_blank" rel="noreferrer"
+            class="p-2.5 hover:text-blue-400 hover:bg-slate-900 rounded-lg transition" aria-label="Instagram"><i
+              data-lucide="instagram" class="w-5 h-5"></i></a>
+          <a href="https://wa.me/08173701023" target="_blank" rel="noreferrer"
+            class="p-2.5 hover:text-blue-400 hover:bg-slate-900 rounded-lg transition" aria-label="WhatsApp"><i
+              data-lucide="message-circle" class="w-5 h-5"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="space-y-6 sm:space-y-8">
+      <div>
+        <p class="text-blue-400 text-xs font-bold tracking-widest uppercase">About Me</p>
+        <h2 class="text-2xl sm:text-3xl font-bold text-slate-100 mt-1">From Words to Interfaces</h2>
+      </div>
+
+
+      <div class="md:col-span-2 space-y-4 text-slate-400 leading-relaxed text-sm sm:text-base">
+        <p>
+          My journey into tech wasn't linear. After graduating with a Bachelor's degree in Philosophy from the
+          University of Ibadan, I realized that writing code is remarkably similar to constructing a logical argument—it
+          requires precision, structure, and a deep understanding of human needs.
+        </p>
+        <p>
+          Philosophy honed my ability to think critically and approach complex problems with a unique perspective.
+          Today, I leverage that analytical foundation to specialize in building responsive, user-centric web
+          applications using modern tools like React, JavaScript, and CSS.
+        </p>
+      </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="space-y-8">
+      <div>
+        <p class="text-blue-400 text-xs font-bold tracking-widest uppercase">SKILLS</p>
+        <h2 class="text-2xl sm:text-3xl font-bold text-slate-100 mt-1">What I bring to the team</h2>
+      </div>
+
+      <div class="space-y-8">
+        <div class="space-y-3">
+          <h3 class="text-sm font-semibold text-slate-400 tracking-wide">Languages</h3>
+          <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
+            <div
+              class="p-4 bg-slate-900/60 border border-slate-800/80 hover:border-blue-500/50 rounded-xl text-center font-medium text-slate-200 text-sm sm:text-base transition-all duration-200 hover:-translate-y-0.5">
+              HTML</div>
+            <div
+              class="p-4 bg-slate-900/60 border border-slate-800/80 hover:border-blue-500/50 rounded-xl text-center font-medium text-slate-200 text-sm sm:text-base transition-all duration-200 hover:-translate-y-0.5">
+              CSS</div>
+            <div
+              class="p-4 bg-slate-900/60 border border-slate-800/80 hover:border-blue-500/50 rounded-xl text-center font-medium text-slate-200 text-sm sm:text-base transition-all duration-200 hover:-translate-y-0.5">
+              JavaScript</div>
+          </div>
+        </div>
+
+        <div class="space-y-3">
+          <h3 class="text-sm font-semibold text-slate-400 tracking-wide">Frameworks & Tools</h3>
+          <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
+            <div
+              class="p-4 bg-slate-900/60 border border-slate-800/80 hover:border-blue-500/50 rounded-xl text-center font-medium text-slate-200 text-sm sm:text-base transition-all duration-200 hover:-translate-y-0.5">
+              React</div>
+            <div
+              class="p-4 bg-slate-900/60 border border-slate-800/80 hover:border-blue-500/50 rounded-xl text-center font-medium text-slate-200 text-sm sm:text-base transition-all duration-200 hover:-translate-y-0.5">
+              Tailwind CSS</div>
+            <div
+              class="p-4 bg-slate-900/60 border border-slate-800/80 hover:border-blue-500/50 rounded-xl text-center font-medium text-slate-200 text-sm sm:text-base transition-all duration-200 hover:-translate-y-0.5">
+              Git</div>
+            <div
+              class="p-4 bg-slate-900/60 border border-slate-800/80 hover:border-blue-500/50 rounded-xl text-center font-medium text-slate-200 text-sm sm:text-base transition-all duration-200 hover:-translate-y-0.5">
+              GitHub</div>
+            <div
+              class="p-4 bg-slate-900/60 border border-slate-800/80 hover:border-blue-500/50 rounded-xl text-center font-medium text-slate-200 text-sm sm:text-base transition-all duration-200 hover:-translate-y-0.5">
+              Vue.js</div>
+            <div
+              class="p-4 bg-slate-900/60 border border-slate-800/80 hover:border-blue-500/50 rounded-xl text-center font-medium text-slate-200 text-sm sm:text-base transition-all duration-200 hover:-translate-y-0.5">
+              VS Code</div>
+            <div
+              class="p-4 bg-slate-900/60 border border-slate-800/80 hover:border-blue-500/50 rounded-xl text-center font-medium text-slate-200 text-sm sm:text-base transition-all duration-200 hover:-translate-y-0.5">
+              Netlify</div>
+          </div>
+        </div>
+
+        <div class="space-y-3 pt-4">
+          <h3 class="text-sm font-semibold text-slate-400 tracking-wide">How I Work</h3>
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div class="p-5 bg-slate-900/40 border border-slate-800/80 rounded-xl space-y-2">
+              <h4 class="font-semibold text-slate-200 text-base">Communicator</h4>
+              <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">Shaped by my background in Philosophy —
+                comfortable expressing complex ideas clearly, logically, and structured.</p>
+            </div>
+            <div class="p-5 bg-slate-900/40 border border-slate-800/80 rounded-xl space-y-2">
+              <h4 class="font-semibold text-slate-200 text-base">Detail-oriented</h4>
+              <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">Attentive to both how an interface looks and
+                how seamlessly it functions under the hood.</p>
+            </div>
+            <div class="p-5 bg-slate-900/40 border border-slate-800/80 rounded-xl space-y-2">
+              <h4 class="font-semibold text-slate-200 text-base">Reliable & professional</h4>
+              <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">Dependable delivery with a commitment to
+                maintaining clean, readable, and maintainable code.</p>
+            </div>
+            <div class="p-5 bg-slate-900/40 border border-slate-800/80 rounded-xl space-y-2">
+              <h4 class="font-semibold text-slate-200 text-base">Always learning</h4>
+              <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">Regularly sharpening my skills and expanding
+                frontend capabilities through hands-on practice and building projects.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="space-y-6 sm:space-y-8">
+      <div>
+        <p class="text-blue-400 text-xs font-bold tracking-widest uppercase">Projects</p>
+        <h2 class="text-2xl sm:text-3xl font-bold text-slate-100 mt-1">Selected Work</h2>
+      </div>
+
+      <div class="grid gap-6">
+        <div
+          class="p-6 bg-slate-900/40 border border-slate-800/80 rounded-xl space-y-4 hover:border-slate-700 transition">
+          <div class="flex justify-between items-start">
+            <h3 class="text-xl font-bold text-slate-100">Personal Portfolio Website</h3>
+            <span
+              class="text-xs font-mono text-blue-400 px-2.5 py-1 bg-blue-950/60 border border-blue-900 rounded">Vanilla
+              JS ·
+              Tailwind</span>
+          </div>
+          <p class="text-sm text-slate-400 leading-relaxed">
+            A clean, modern developer portfolio constructed using Vanilla JS and Tailwind CSS, featuring responsive
+            mobile
+            navigation and dynamic layout components.
+          </p>
+          <!-- My Contribution Line -->
+          <div class="text-xs text-slate-300 bg-slate-950/50 p-3 rounded-lg border border-slate-800/60 space-y-1">
+            <span class="font-semibold text-blue-400 block uppercase tracking-wider text-[10px]">My Contribution:</span>
+            <p class="leading-relaxed">
+              Designed and engineered complete frontend architecture, layout styling, theme elements, and responsive
+              mobile interaction handlers.
+            </p>
+          </div>
+          <div class="flex gap-4 pt-2 text-sm font-medium">
+            <a href="#" class="text-blue-400 hover:text-blue-300 flex items-center gap-1">
+              View Live <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+            </a>
+            <a href="https://github.com/Oddunayo/Portfolio" target="_blank" rel="noreferrer"
+              class="text-slate-400 hover:text-slate-200 flex items-center gap-1">
+              View on GitHub <i data-lucide="github" class="w-3.5 h-3.5"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid gap-6">
+        <div
+          class="p-6 bg-slate-900/40 border border-slate-800/80 rounded-xl space-y-4 hover:border-slate-700 transition">
+          <div class="flex justify-between items-start">
+            <h3 class="text-xl font-bold text-slate-100">Huddle-Like App</h3>
+            <span
+              class="text-xs font-mono text-blue-400 px-2.5 py-1 bg-blue-950/60 border border-blue-900 rounded">React ·
+              Tailwind</span>
+          </div>
+          <p class="text-sm text-slate-400 leading-relaxed">
+            A lightweight collaboration platform for small remote teams, combining team messaging with online
+            collaboration in one simple interface.
+          </p>
+          <div class="text-xs text-slate-300 bg-slate-950/50 p-3 rounded-lg border border-slate-800/60 space-y-1">
+            <span class="font-semibold text-blue-400 block uppercase tracking-wider text-[10px]">My Contribution:</span>
+            <p class="leading-relaxed">
+              Led core layout architecture, implemented fully responsive Tailwind grid/flexbox structures, and
+              engineered main interactive UI sections.
+            </p>
+          </div>
+          <div class="flex gap-4 pt-2 text-sm font-medium">
+            <a href="https://huddle-app-murex.vercel.app/"
+              class="text-blue-400 hover:text-blue-300 flex items-center gap-1">
+              View Live <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+            </a>
+            <a href="https://github.com/Oddunayo/huddle-app" target="_blank" rel="noreferrer"
+              class="text-slate-400 hover:text-slate-200 flex items-center gap-1">
+              View on GitHub <i data-lucide="github" class="w-3.5 h-3.5"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project: Mimi's Pantry -->
+      <div
+        class="p-6 bg-slate-900/40 border border-slate-800/80 rounded-xl space-y-4 hover:border-slate-700 transition">
+        <div class="flex justify-between items-start flex-wrap gap-2">
+          <h3 class="text-xl font-bold text-slate-100">Mimi's Pantry</h3>
+          <span class="text-xs font-mono text-blue-400 px-2.5 py-1 bg-blue-950/60 border border-blue-900 rounded">
+            React · Tailwind CSS · Vite
+          </span>
+        </div>
+
+        <p class="text-sm text-slate-400 leading-relaxed">
+          A web application designed for browsing and managing pantry items, featuring clean component structure, brand
+          integration, and responsive layout design.
+        </p>
+
+        <!-- My Contribution Line -->
+        <div class="text-xs text-slate-300 bg-slate-950/50 p-3 rounded-lg border border-slate-800/60 space-y-1">
+          <span class="font-semibold text-blue-400 block uppercase tracking-wider text-[10px]">My Contribution:</span>
+          <p class="leading-relaxed">
+            Architected full application boilerplate with Vite, integrated custom brand identity styling, and built
+            responsive component trees using Tailwind CSS.
+          </p>
+        </div>
+
+        <div class="flex gap-4 pt-2 text-sm font-medium">
+          <a href="https://mimis-pantry.vercel.app" target="_blank" rel="noreferrer"
+            class="text-blue-400 hover:text-blue-300 flex items-center gap-1">
+            View Live <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+          </a>
+          <a href="https://github.com/Oddunayo/mimis-pantry" target="_blank" rel="noreferrer"
+            class="text-slate-400 hover:text-slate-200 flex items-center gap-1">
+            View on GitHub <i data-lucide="github" class="w-3.5 h-3.5"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Project: Misi Davis Reality -->
+      <div
+        class="p-6 bg-slate-900/40 border border-slate-800/80 rounded-xl space-y-4 hover:border-slate-700 transition">
+        <div class="flex justify-between items-start flex-wrap gap-2">
+          <h3 class="text-xl font-bold text-slate-100">Misi Davis Reality</h3>
+          <span class="text-xs font-mono text-blue-400 px-2.5 py-1 bg-blue-950/60 border border-blue-900 rounded">
+            React · Tailwind CSS · Vite
+          </span>
+        </div>
+
+        <p class="text-sm text-slate-400 leading-relaxed">
+          A modern real estate website showcase featuring property listings, dynamic UI components, and a clean,
+          responsive layout built with Vite and Tailwind CSS.
+        </p>
+
+        <!-- My Contribution Line -->
+        <div class="text-xs text-slate-300 bg-slate-950/50 p-3 rounded-lg border border-slate-800/60 space-y-1">
+          <span class="font-semibold text-blue-400 block uppercase tracking-wider text-[10px]">My Contribution:</span>
+          <p class="leading-relaxed">
+            Engineered the complete React component hierarchy, established custom Tailwind styling tokens, and
+            configured build/deployment pipelines to Vercel.
+          </p>
+        </div>
+
+        <div class="flex gap-4 pt-2 text-sm font-medium">
+          <a href="https://misi-davis-reality.vercel.app" target="_blank" rel="noreferrer"
+            class="text-blue-400 hover:text-blue-300 flex items-center gap-1">
+            View Live <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+          </a>
+          <a href="https://github.com/Oddunayo/misi-davis-reality" target="_blank" rel="noreferrer"
+            class="text-slate-400 hover:text-slate-200 flex items-center gap-1">
+            View on GitHub <i data-lucide="github" class="w-3.5 h-3.5"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Project: Recipe Finder -->
+      <div
+        class="p-6 bg-slate-900/40 border border-slate-800/80 rounded-xl space-y-4 hover:border-slate-700 transition">
+        <div class="flex justify-between items-start flex-wrap gap-2">
+          <h3 class="text-xl font-bold text-slate-100">Recipe Finder</h3>
+          <span class="text-xs font-mono text-blue-400 px-2.5 py-1 bg-blue-950/60 border border-blue-900 rounded">
+            Vanilla JS · CSS3 · HTML5
+          </span>
+        </div>
+
+        <p class="text-sm text-slate-400 leading-relaxed">
+          An interactive web application that allows users to search for culinary recipes, view ingredients, and explore
+          step-by-step cooking instructions with a clean user interface.
+        </p>
+
+        <!-- My Contribution Line -->
+        <div class="text-xs text-slate-300 bg-slate-950/50 p-3 rounded-lg border border-slate-800/60 space-y-1">
+          <span class="font-semibold text-blue-400 block uppercase tracking-wider text-[10px]">My Contribution:</span>
+          <p class="leading-relaxed">
+            Engineered the JavaScript search and fetching logic, structured custom CSS layouts, and built responsive
+            recipe display cards.
+          </p>
+        </div>
+
+        <div class="flex gap-4 pt-2 text-sm font-medium">
+          <a href="https://recipe-finder-ruby-six.vercel.app" target="_blank" rel="noreferrer"
+            class="text-blue-400 hover:text-blue-300 flex items-center gap-1">
+            View Live <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+          </a>
+          <a href="https://github.com/Oddunayo/Recipe-Finder" target="_blank" rel="noreferrer"
+            class="text-slate-400 hover:text-slate-200 flex items-center gap-1">
+            View on GitHub <i data-lucide="github" class="w-3.5 h-3.5"></i>
+          </a>
+        </div>
+      </div>
+
+      <p class="text-xs sm:text-sm text-slate-500 italic">More projects coming soon…</p>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="space-y-6 sm:space-y-8">
+      <div>
+        <p class="text-blue-400 text-xs font-bold tracking-widest uppercase">Certifications</p>
+        <h2 class="text-2xl sm:text-3xl font-bold text-slate-100 mt-1">Credentials</h2>
+      </div>
+
+      <div class="grid sm:grid-cols-2 gap-4">
+        <div class="p-5 bg-slate-900/40 border border-slate-800/80 rounded-xl space-y-2">
+          <div class="flex items-center gap-2 text-blue-400">
+            <i data-lucide="award" class="w-5 h-5"></i>
+            <h3 class="font-semibold text-slate-200 text-base">Meta Front-End Developer</h3>
+          </div>
+          <p class="text-xs text-slate-400">Coursera Specialization</p>
+          <p class="text-xs text-slate-500">React Basics, Programming with JS, Version Control, HTML & CSS In-Depth</p>
+        </div>
+
+        <div class="p-5 bg-slate-900/40 border border-slate-800/80 rounded-xl space-y-2">
+          <div class="flex items-center gap-2 text-blue-400">
+            <i data-lucide="award" class="w-5 h-5"></i>
+            <h3 class="font-semibold text-slate-200 text-base">Software Engineering Certificate</h3>
+          </div>
+          <p class="text-xs text-blue-400 font-mono">In Progress</p>
+          <p class="text-xs text-slate-500">AltSchool Africa (Front-End Engineering)</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education History Section -->
+    <section id="education" class="space-y-6 sm:space-y-8">
+      <div>
+        <p class="text-blue-400 text-xs font-bold tracking-widest uppercase">My Journey</p>
+        <h2 class="text-2xl sm:text-3xl font-bold text-slate-100 mt-1">Education History</h2>
+      </div>
+
+      <div class="relative border-l border-slate-800 pl-5 sm:pl-6 space-y-8 sm:space-y-10 ml-1 sm:ml-2">
+        <div class="relative group">
+          <div class="absolute -left-[27px] top-1.5 w-3 h-3 bg-blue-500 rounded-full ring-4 ring-slate-950"></div>
+          <span
+            class="text-[11px] sm:text-xs font-semibold px-2 py-0.5 bg-blue-950 text-blue-300 rounded border border-blue-800">2025
+            – Present</span>
+          <h3 class="text-lg sm:text-xl font-bold text-slate-100 mt-2">Software Engineering Program</h3>
+          <p class="text-xs sm:text-sm text-blue-400 font-medium">AltSchool Africa</p>
+          <p class="text-xs sm:text-sm text-slate-400 mt-2 leading-relaxed">
+            Undergoing intensive training in Front-End Engineering, focusing on advanced JavaScript, React, and
+            collaborative development.
+          </p>
+        </div>
+
+        <div class="relative group">
+          <div class="absolute -left-[27px] top-1.5 w-3 h-3 bg-slate-700 rounded-full ring-4 ring-slate-950"></div>
+          <span class="text-[11px] sm:text-xs font-medium text-slate-400">2020 – 2025</span>
+          <h3 class="text-lg sm:text-xl font-bold text-slate-100 mt-2">Bachelor's Degree in Philosophy</h3>
+          <p class="text-xs sm:text-sm text-blue-400 font-medium">University of Ibadan</p>
+          <p class="text-xs sm:text-sm text-slate-400 mt-2 leading-relaxed">
+            Developed a strong foundation in analytical thinking and systematic problem-solving, which serves as the
+            backbone of my engineering approach.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact" class="space-y-6 sm:space-y-8 max-w-xl">
+      <div>
+        <p class="text-blue-400 text-xs font-bold tracking-widest uppercase">Contact</p>
+        <h2 class="text-2xl sm:text-3xl font-bold text-slate-100 mt-1">Let's talk</h2>
+        <p class="text-slate-400 text-xs sm:text-sm mt-1">Open to front-end opportunities, internships, and
+          collaborations.</p>
+      </div>
+
+      <form action="https://formspree.io/f/xbdplajj" method="POST" class="space-y-4">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <input type="text" name="full-name" placeholder="Full Name"
+            class="w-full px-4 py-3 bg-slate-900/60 border border-slate-800 rounded-lg focus:outline-none focus:border-blue-500 text-slate-200 text-sm transition"
+            required />
+          <input type="email" name="email" placeholder="Email Address"
+            class="w-full px-4 py-3 bg-slate-900/60 border border-slate-800 rounded-lg focus:outline-none focus:border-blue-500 text-slate-200 text-sm transition"
+            required />
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <input type="tel" name="phone" placeholder="Mobile No"
+            class="w-full px-4 py-3 bg-slate-900/60 border border-slate-800 rounded-lg focus:outline-none focus:border-blue-500 text-slate-200 text-sm transition"
+            required />
+          <input type="text" name="subject" placeholder="Email Subject"
+            class="w-full px-4 py-3 bg-slate-900/60 border border-slate-800 rounded-lg focus:outline-none focus:border-blue-500 text-slate-200 text-sm transition"
+            required />
+        </div>
+        <textarea name="message" rows="5" placeholder="Your Message"
+          class="w-full px-4 py-3 bg-slate-900/60 border border-slate-800 rounded-lg focus:outline-none focus:border-blue-500 text-slate-200 text-sm transition resize-none"
+          required></textarea>
+        <button type="submit"
+          class="w-full py-3 bg-blue-600 hover:bg-blue-500 text-white font-medium rounded-lg transition shadow-md shadow-blue-600/20 text-sm">
+          Send Message
+        </button>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-900 text-center py-8 text-xs sm:text-sm text-slate-500">
+    <p>© <span id="year"></span> Obadara Basit Odunayo. All rights reserved.</p>
+  </footer>
+
+  <!-- Vanilla JS Script -->
+  <script src="script.js"></script>
+</body>
+
+</html>
